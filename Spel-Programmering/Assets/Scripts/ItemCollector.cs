@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class ItemCollector : MonoBehaviour
 {
     [SerializeField] private Text crystalText;
@@ -13,7 +14,7 @@ public class ItemCollector : MonoBehaviour
         {
            Destroy(collision.gameObject);
            crystals++;
-           crystalText.text = "Crystals:" + crystals;
+           crystalText.text = "Crystals: " + crystals;
 
         }
     }
